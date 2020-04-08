@@ -1,0 +1,40 @@
+{
+    "cards": [    
+        {
+            "card": {
+                "question": "Do you have the cash?",
+                "choices": [
+                    "Yes",
+                    "No",
+                    "Maybe",
+                    "So"
+                ],
+                "answer": "Yes"
+            }
+        },
+        {
+            "card": {
+                "question": "Favourite food?",
+                "choices": [
+                    "Fried Chicken",
+                    "Taco fries",
+                    "Sweet potato fries",
+                    "Dim sum"
+                ],
+                "answer": "Fried chicken"
+            }
+        },
+        {
+            "card": {
+                "question": "Do you have the high groud?",
+                "choices": [
+                    "Anakin",
+                    "Darth Vader",
+                    "Darth Maul",
+                    "Count Dooku"
+                ],
+                "answer": "Anakin"
+            }
+        }
+    ]
+}
