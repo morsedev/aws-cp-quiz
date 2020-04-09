@@ -1,5 +1,4 @@
 import React from 'react';
-import tachyons from 'tachyons';
 import styled from 'styled-components';
 
 const QuestionDiv = styled.div.attrs({
@@ -7,7 +6,7 @@ const QuestionDiv = styled.div.attrs({
 })``
 
 const QuestionP = styled.p.attrs({
-    className: `f2-ns fw3-ns`
+    className: `f2-ns fw3-ns tracked`
 })``
 
 export default function Question({ question }) {

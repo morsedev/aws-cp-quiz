@@ -1,5 +1,4 @@
 import React from 'react';
-import tachyons from 'tachyons';
 import styled from 'styled-components';
 
 const ChoicesDiv = styled.div.attrs({
@@ -10,17 +9,17 @@ const Choice = styled.div.attrs({
     className: `w-100`
 })``
 
-const ChoiceP = styled.a.attrs({
-    className: `fw3-ns f3-ns link hover br1 grow ph3 pv2 mb2 dib black pointer`
+const ChoiceBtn = styled.a.attrs({
+    className: `fw3-ns f3-ns link hover br1 grow ph3 pv2 mb2 dib pointer`
 })``
 
-export default function Choices({ choice }) {
+export default function Choices({ choice, onClick, correct }) {
     return (
         <ChoicesDiv>
             <Choice>
-                <ChoiceP>
+                <ChoiceBtn onClick={onClick}>
                     { choice }
-                </ChoiceP>
+                </ChoiceBtn>
             </Choice>
         </ChoicesDiv>
     )
