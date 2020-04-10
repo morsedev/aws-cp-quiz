@@ -11,7 +11,6 @@ export default function Answer({ answer, selected }) {
     return (
         <AnswerP selected={selected}>
             {answer}
-            {console.log(selected)}
         </AnswerP>
     )
 }

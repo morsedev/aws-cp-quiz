@@ -1,30 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const ChoicesDiv = styled.div.attrs({
-    className: `flex flex-column`
-})``
-
 const Choice = styled.div.attrs({
-    className: `w-100 flex items-center mb2 ba`
+    className: `w-100 mb2`
 })``
 
-const ChoiceBtn = styled.input.attrs({
-    className: `fw3-ns f3-ns link hover br1 grow ph3 pv2 mb2 dib pointer mr2`
+const ChoiceBtn = styled.a.attrs({
+    className: `fw3 f3-ns f4 link hover br1 grow ph3 pv2 mb2 dib pointer`
 })``
 
-const Label = styled.label.attrs({
-    className: `fw3 f3 lh-copy`
-})``
 
-export default function Choices({ choice, onClick, correct }) {
+export default function Choices({ choice, onSelection, correct }) {
     return (
-
             <Choice>
-                <ChoiceBtn type="checkbox" onClick={onClick} value={choice}>
-                    
+                <ChoiceBtn onClick={onSelection}>
+                    {choice}
                 </ChoiceBtn>
-                <Label>{choice}</Label>
             </Choice>
     )
 }

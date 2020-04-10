@@ -17,17 +17,17 @@ const QuestNum = styled.p.attrs({
     className: `tr mr4 fw3 f4`
 })``
 
-export default function Score({ score, index, questNum }) {
+export default function Score({ score, index, numOfQuest }) {
     return (
         <ScoreDiv>
             <ScoreCol>
                 <ScoreP>
-                    {score}
+                    {((score / numOfQuest) * 100).toFixed(2)}%
                 </ScoreP>
             </ScoreCol>
             <ScoreCol>
                 <QuestNum>
-                    {index}/{questNum}
+                    {index}/{numOfQuest}
                 </QuestNum>
             </ScoreCol>
         </ScoreDiv>
