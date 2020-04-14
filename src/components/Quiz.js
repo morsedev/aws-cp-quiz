@@ -41,6 +41,7 @@ export default function Quiz() {
     const [selected, setSelected] = useState(false);
     const [score, setScore] = useState(0);
     const [end, setEnd] = useState(false);
+    const [passThreshold, setPassThreshold] = useState(70);
 
     const onSelection = e => {
         console.log(index)
@@ -87,7 +88,11 @@ export default function Quiz() {
 
     return (   
             <Card>
-                <Score score={((score / data.length) * 100).toFixed(2)} index={index + 1} numOfQuest={data.length}/>
+                <Score 
+                    score={((score / data.length) * 100).toFixed(2)} 
+                    index={index + 1} numOfQuest={data.length}
+                    passThreshold={passThreshold}
+                />
                 <Question question={question}/>
                 <ChoicesDiv>
                     {

@@ -12,18 +12,18 @@ const ScoreCol = styled.div.attrs({
 const ScoreP = styled.p.attrs({
     className: `tl ml4 fw3 f4`
 })`
-    color: ${props => props.score >= 70 ? "green" : "red"}
+    color: ${props => props.score >= props.passThreshold ? "green" : "red"}
 `
 
 const QuestNum = styled.p.attrs({
     className: `tr mr4 fw3 f4`
 })``
 
-export default function Score({ score, index, numOfQuest }) {
+export default function Score({ score, index, numOfQuest, passThreshold }) {
     return (
         <ScoreDiv>
             <ScoreCol>
-                <ScoreP score={score}>
+                <ScoreP score={score} passThreshold={passThreshold}>
                     {score}%
                 </ScoreP>
             </ScoreCol>
