@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const NextBtn = styled.a.attrs({
-    className: `link pointer dim tr f3 mr3`
+    className: `link pointer dim tr f3 mr3 mb3`
 })`
     display: ${props => props.selected && !props.end ? "inline" : "none"}
 `

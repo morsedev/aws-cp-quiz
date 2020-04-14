@@ -6,7 +6,7 @@ const QuestionDiv = styled.div.attrs({
 })``
 
 const QuestionP = styled.p.attrs({
-    className: `f2-ns fw3-ns fw4 tracked f3`
+    className: `f2-ns fw3-ns fw4 tracked f3 ma4`
 })``
 
 export default function Question({ question }) {
