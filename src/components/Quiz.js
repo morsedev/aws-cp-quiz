@@ -1,7 +1,7 @@
 import React, { useState, useRef, forwardRef, useEffect, useCallback } from 'react';
 import styled from 'styled-components';
 
-import questions from '../data/test.json';
+import questions from '../data/exam.json';
 
 import Question from './Question';
 import Choice from './Choice';
