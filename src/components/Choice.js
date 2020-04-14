@@ -10,7 +10,7 @@ const ChoiceBtn = styled.a.attrs({
 })``
 
 
-export default function Choices({ choice, onSelection, correct }) {
+export default function Choices({ choice, onSelection }) {
     return (
             <Choice>
                 <ChoiceBtn onClick={onSelection}>

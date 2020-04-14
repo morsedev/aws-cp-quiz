@@ -8,7 +8,7 @@ const ResetDiv = styled.div.attrs({
 const ResetBtn = styled.a.attrs({
     className: `fw3 f3 dim pointer link`
 })`
-display: ${props => props.end ? "inline" : "none"}
+    display: ${props => props.end ? "inline" : "none"}
 `
 
 export default function({ reset, end }) {

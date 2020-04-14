@@ -11,7 +11,9 @@ const ScoreCol = styled.div.attrs({
 
 const ScoreP = styled.p.attrs({
     className: `tl ml4 fw3 f4`
-})``
+})`
+    color: ${props => props.score >= 70 ? "green" : "red"}
+`
 
 const QuestNum = styled.p.attrs({
     className: `tr mr4 fw3 f4`
@@ -21,8 +23,8 @@ export default function Score({ score, index, numOfQuest }) {
     return (
         <ScoreDiv>
             <ScoreCol>
-                <ScoreP>
-                    {((score / numOfQuest) * 100).toFixed(2)}%
+                <ScoreP score={score}>
+                    {score}%
                 </ScoreP>
             </ScoreCol>
             <ScoreCol>

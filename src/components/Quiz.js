@@ -11,7 +11,7 @@ import Score from './Score';
 import Reset from './Reset';
 
 const Card = styled.div.attrs({
-    className: `shadow-5 mw7 br2 tc ba center mt7`
+    className: `shadow-5 mw7 br2 tc ba center mt5`
 })``
 
 const ChoicesDiv = styled.form.attrs({
@@ -19,7 +19,7 @@ const ChoicesDiv = styled.form.attrs({
 })``
 
 const AnswerDiv = styled.div.attrs({
-    className: ``
+    className: `pt3`
 })``
 
 const NextDiv = styled.div.attrs({
@@ -87,7 +87,7 @@ export default function Quiz() {
 
     return (   
             <Card>
-                <Score score={score} index={index + 1} numOfQuest={data.length}/>
+                <Score score={((score / data.length) * 100).toFixed(2)} index={index + 1} numOfQuest={data.length}/>
                 <Question question={question}/>
                 <ChoicesDiv>
                     {
