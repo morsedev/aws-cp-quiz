@@ -59,7 +59,7 @@ export default function Quiz() {
 
         if (index == data.length-1) {
             const percentage = ((index / data.length) * 100).toFixed(2);
-            questStr = (percentage <= 70 ? "You passed!" : "You failed..")
+            questStr = (percentage >= 70 ? "You passed!" : "You failed..")
             setEnd(true)
         } else {
             setIndex(index + 1)
