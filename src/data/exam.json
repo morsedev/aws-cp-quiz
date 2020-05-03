@@ -3105,7 +3105,7 @@
                     "AWS Total Cost of Ownership (TCO) Calculator",
                     "AWS Well-Architected Tool"
                 ],
-                "answer": "AWS CloudFormation"
+                "answer": "Cost Explorer"
             }
         },
         {
