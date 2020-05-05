@@ -34,7 +34,7 @@ export default function Quiz() {
     const shuffle = array => [...array].sort(() => 0.5 - Math.random());
 
     const [index, setIndex] = useState(0);
-    const [data, setData] = useState(shuffle(questions.cards));
+    const [data, setData] = useState(shuffle(questions.cards).slice(0, 65));
     const [question, setQuestion] = useState(data[index].card.question);
     const [choices, setChoices] = useState(shuffle(data[index].card.choices));
     const [answer, setAnswer] = useState(data[index].card.answer);
