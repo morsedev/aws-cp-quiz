@@ -266,18 +266,6 @@
         },
         {
             "card": {
-                "question": "A company is considering using AWS for a self-hosted database that requires a nightly shutdown for maintenance and cost-saving purposes. Which service should the company use?",
-                "choices": [
-                    "Detailed billing report",
-                    "Cost Estimator",
-                    "AWS Total Cost of Ownership (TCO) Calculator",
-                    "AWS Estimator"
-                ],
-                "answer": "AWS Total Cost of Ownership (TCO) Calculator"
-            }
-        },
-        {
-            "card": {
                 "question": "Which of the following are advantages of AWS consolidated billing?",
                 "choices": [
                     "The ability to receive one bill for multiple accounts",
