@@ -386,18 +386,6 @@
         },
         {
             "card": {
-                "question": "Which AWS tools assist with estimating costs?",
-                "choices": [
-                    "AWS CodePipeline",
-                    "Elastic Load Balancing",
-                    "Amazon EBS",
-                    "AWS Direct Connect"
-                ],
-                "answer": "Elastic Load Balancing"
-            }
-        },
-        {
-            "card": {
                 "question": "Where are AWS compliance documents, such as an SOC 1 report, located?",
                 "choices": [
                     "Amazon Inspector",
@@ -1521,7 +1509,7 @@
                     "Create one IAM user and share with many developers and users.",
                     "Enable Amazon CloudFront."
                 ],
-                "answer": "Grant least privilege access to IAM users."
+                "answer": "Activate multi-factor authentication (MFA) for privileged users."
             }
         },
         {
@@ -2894,19 +2882,7 @@
         },
         {
             "card": {
-                "question": "Which of the following services have Distributed Denial of Service (DDoS) mitigation features?",
-                "choices": [
-                    "AWS WAF",
-                    "Amazon DynamoDB",
-                    "Amazon CloudFront",
-                    "Amazon Inspector"
-                ],
-                "answer": "Amazon CloudFront"
-            }
-        },
-        {
-            "card": {
-                "question": "Which of the following services have Distributed Denial of Service (DDoS) mitigation features?",
+                "question": "When building a cloud Total Cost of Ownership (TCO) model, which cost elements should be considered for workloads running on AWS?",
                 "choices": [
                     "Compute costs",
                     "Facilities costs",
@@ -2918,7 +2894,7 @@
         },
         {
             "card": {
-                "question": "Which of the following services have Distributed Denial of Service (DDoS) mitigation features?",
+                "question": "When building a cloud Total Cost of Ownership (TCO) model, which cost elements should be considered for workloads running on AWS?",
                 "choices": [
                     "Storage costs",
                     "Facilities costs",
@@ -2930,7 +2906,7 @@
         },
         {
             "card": {
-                "question": "Which of the following services have Distributed Denial of Service (DDoS) mitigation features?",
+                "question": "When building a cloud Total Cost of Ownership (TCO) model, which cost elements should be considered for workloads running on AWS?",
                 "choices": [
                     "Data transfer costs",
                     "Facilities costs",

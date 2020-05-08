@@ -41,13 +41,13 @@ export default function Quiz() {
     const [selected, setSelected] = useState(false);
     const [score, setScore] = useState(0);
     const [end, setEnd] = useState(false);
-    const [passThreshold, setPassThreshold] = useState(70);
+    const [passThreshold] = useState(70);
 
     const onSelection = e => {
         console.log(index)
         e.persist()
         const text = e.target.text.toLowerCase()
-        if (!selected && answer.toLowerCase() == text) {
+        if (!selected && answer.toLowerCase() === text) {
             setScore(score + 1)
         }
         setSelected(true)
@@ -58,9 +58,9 @@ export default function Quiz() {
         var choiceArr = []
         var answerStr = ""
 
-        if (index == data.length-1) {
+        if (index === data.length-1) {
             const percentage = ((index / data.length) * 100).toFixed(2);
-            questStr = (percentage >= 70 ? "You passed!" : "You failed..")
+            questStr = (percentage >= passThreshold ? "You passed!" : "You failed..")
             setEnd(true)
         } else {
             setIndex(index + 1)
