@@ -3974,30 +3974,6 @@
         },
         {
             "card": {
-                "question": "Which of the following security measures protect access to an AWS account?",
-                "choices": [
-                    "Enable AWS CloudTrail.",
-                    "Grant least privilege access to IAM users.",
-                    "Create one IAM user and share with many developers and users.",
-                    "Enable Amazon CloudFront."
-                ],
-                "answer": "Grant least privilege access to IAM users."
-            }
-        },
-        {
-            "card": {
-                "question": "Which of the following security measures protect access to an AWS account?",
-                "choices": [
-                    "Enable AWS CloudTrail.",
-                    "Activate multi-factor authentication (MFA) for privileged users.",
-                    "Create one IAM user and share with many developers and users.",
-                    "Enable Amazon CloudFront."
-                ],
-                "answer": "Activate multi-factor authentication (MFA) for privileged users."
-            }
-        },
-        {
-            "card": {
                 "question": "Which options does AWS make available for customers who want to learn about security in the cloud in an instructor-led setting?",
                 "choices": [
                     "AWS Trusted Advisor",
